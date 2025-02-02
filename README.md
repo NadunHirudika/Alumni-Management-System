@@ -4,7 +4,7 @@ The Alumni Management System project in PHP is an advanced initiative designed t
 The project was developed using PHP and MySQL.
 
 # Pages and Modules
-Home page
+-Home page
 About us page
 Vision & mission page
 President's message page
