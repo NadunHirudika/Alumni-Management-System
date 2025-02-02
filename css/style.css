@@ -1,0 +1,249 @@
+* {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding-top: 4rem;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    --main-color: white !important;
+    --second-color: aqua !important;
+    --Third-color: #00a650 !important;
+    --text-color: #191b52 !important;
+    --bg-color: rgb(243, 201, 182);
+
+    --box-shadow: 2px 2px 10px 14px rgb(14 55 54 /15%);
+}
+
+section {
+    padding: 50px 10px;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    color: var(--text-color);
+}
+
+/* Navigation bar */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 100px;
+    background-color: #ffffff;
+    color: var(--text-color);
+    transition: 0.5s linear;
+}
+
+.header2 {
+    background-color: #191b52;
+}
+
+.Logo img {
+    width: 180px;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar a {
+    padding: 1px 17px;
+    color: var(--text-color);
+    font: size 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: var(--Third-color);
+    font-weight: 500;
+    border-radius: 1rem;
+    transition-property: var(--bg-color);
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+}
+
+.header-icon {
+    font-size: 22px;
+    cursor: pointer;
+    z-index: 10000;
+    display: flex;
+
+}
+
+.header-icon .bx {
+    color: var(--text-color);
+}
+
+#Menu-icon {
+    color: var(--text-color);
+    font-size: 24px;
+    z-index: 100001;
+    cursor: pointer;
+    display: none;
+}
+
+
+/* HOME */
+.home {
+    width: 100%;
+    min-height: 100vh;
+    background: url(../images/video-slider.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(17rem, auto));
+    align-items: center;
+    gap: 1.5rem;
+    padding: 100px;
+}
+
+.home-text h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 3.4rem;
+    color: var(--main-color);
+    padding-left: 6px;
+    letter-spacing: 1px;
+}
+
+.home-text p {
+    font-size: 1.2rem;
+    color: var(--main-color);
+    margin: 0.5rem 0 1.4rem;
+    padding-left: 6px;
+}
+
+.h2-Title {
+    background-color: #191b52;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* Button */
+.btn {
+    padding: 10px 70px;
+    border-radius: 50px;
+    background-color: var(--main-color) !important;
+}
+
+.btn:hover {
+    background-color: var(--Third-color) !important;
+}
+
+.btn2 {
+    padding: 10px 70px;
+    border-radius: 50px;
+    background-color: var(--Third-color) !important;
+}
+
+
+/* Vistion & Mission */
+.Vistion_Mission {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(17rem, auto));
+    gap: 1.5rem;
+}
+
+.vistion_mission-text h2 {
+    font-size: 3.4rem;
+    text-transform: uppercase;
+    padding-top: 7rem;
+    padding-left: 5rem;
+    letter-spacing: 1px;
+}
+
+.vistion_mission-text p {
+    font-size: 0.938rem;
+    margin: 0.5rem 0 1.1rem;
+    padding-left: 4rem;
+    letter-spacing: 1px;
+}
+
+
+
+/* About Alumni */
+.About-Alumni {
+    width: 100%;
+    min-height: 100vh;
+    background: url(../images/about-bg-2.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(17rem, auto));
+    align-items: center;
+    gap: 1.5rem;
+    padding: 100px;
+
+}
+
+.About-Alumni-img {
+    width: 400px;
+}
+
+.About-Alumni-img h2 {
+    color: var(--Third-color);
+    padding-left: 11rem;
+    padding-top: 2rem;
+
+
+}
+
+.About-Alumni-text {
+    color: var(--main-color);
+    font-size: 1.2rem;
+    margin: 50px;
+}
+
+
+
+
+.animated-section {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.event-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* footer */
+.footer {
+    background-color: #191b52;
+    color: white;
+    text-align: center;
+    padding: 60px 30px;
+    width: 100%;
+    bottom: 0;
+    text-decoration: none;
+}
